@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAFIA</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body>
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="music-player">
+      <button id="prevSong" class="music-btn">
+          <span class="material-symbols-outlined">skip_previous</span>
+      </button>
+  
+      <div class="song-info">
+          <img id="songIcon" src="/img/song1.jpg" alt="Cover" class="song-cover">
+          <span id="songTitle">Canción 1</span>
+      </div>
+  
+      <button id="nextSong" class="music-btn">
+          <span class="material-symbols-outlined">skip_next</span>
+      </button>
+  </div>
+  
+  <audio id="backgroundMusic" loop></audio>
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide section1">
+          <div class="collage-container">
+            <p class="description">HOLA MI AMORCITO PRECIOSA</p>
+            <div class="collage">
+              <img src="/img/1.jpg" alt="Imagen 1" />
+              <img src="/img/2.jpg" alt="Imagen 2" />
+              <img src="/img/3.jpg" alt="Imagen 3" />
+              <img src="/img/4.jpg" alt="Imagen 4" />
+              <img src="/img/5.jpg" alt="Imagen 5" />
+              <img src="/img/6.jpg" alt="Imagen 6" />
+              <img src="/img/7.jpg" alt="Imagen 7" />
+              <img src="/img/8.jpg" alt="Imagen 8" />
+              <img src="/img/9.jpg" alt="Imagen 9" />
+            </div>
+            <p class="description">
+              Muchas gracias por hacer mi vida más bonita. No siempre son los
+              mejores momentos, pero estar contigo me hace muy feliz, te amo
+              muchisimo.
+              <br /><br />
+              Aqui te dejo una linda propuesta que tengo para ti.
+            </p>
+          </div>
+
+          <div class="tap-left" onclick="swiper.slidePrev()"></div>
+          <div class="tap-right" onclick="swiper.slideNext()"></div>
+        </div>
+
+        <div class="swiper-slide section2">
+          <div class="section2-content">
+            <img src="/img/1.png" alt="Imagen 1" class="img1" />
+            <img src="/img/3.png" alt="Imagen 2" class="img2" />
+            <img src="/img/2.png" alt="Imagen 3" class="img3" />
+            <img src="/img/4.png" alt="Imagen 3" class="img4" />
+            <img src="/img/4.png" alt="Imagen 3" class="img5" />
+          </div>
+
+          <div class="tap-left" onclick="swiper.slidePrev()"></div>
+          <div class="tap-right" onclick="swiper.slideNext()"></div>
+        </div>
+
+        <div class="swiper-slide section3">
+          <div class="section3-content">
+            <div class="container-letter">
+              <div class="cover"></div>
+              <p class="paper" id="mainMessage">TIENES UNA INVITACIÓN</p>
+              <div class="letter"></div>
+            </div>
+            <audio id="notificationSound">
+              <source src="/sounds/notification.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+          <div class="tap-left" onclick="swiper.slidePrev()"></div>
+          <div class="tap-right" onclick="swiper.slideNext()"></div>
+        </div>
+
+        <div class="swiper-slide section1">
+          <div class="section4-content">
+            <div class="invitation-card">
+              <!-- Círculos decorativos -->
+              <div class="corner-top-left"></div>
+              <div class="corner-top-right"></div>
+              <div class="corner-bottom-left"></div>
+              <div class="corner-bottom-right"></div>
+
+              <!-- Encabezado con icono de ubicación -->
+              <div class="location-header">
+                <span class="material-symbols-outlined location-icon"
+                  >location_on</span
+                >
+                <span class="location-text">KIDZANIA SOLO AMIGOS</span>
+              </div>
+
+              <!-- Mapa o imagen -->
+              <div class="map-container">
+                <iframe
+                  class="mapagoogle"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.966932448265!2d-100.31955332378638!3d25.63922297742903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be6a899585fd%3A0x93ad8e867f3915df!2sKidZania%20Monterrey!5e0!3m2!1ses-419!2smx!4v1739059538014!5m2!1ses-419!2smx"
+                  width="400"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="event-details">
+                <p>
+                  <span class="material-symbols-outlined">event</span>
+                  <strong>Fecha:</strong> 15 de Febrero 2025
+                </p>
+                <p>
+                  <span class="material-symbols-outlined">schedule</span>
+                  <strong>Hora:</strong> 19:30 PM - 00:30 PM
+                </p>
+                <p>
+                  <span class="material-symbols-outlined">place</span>
+                  <strong>Lugar:</strong> KidZania Monterrey
+                </p>
+                <p>
+                  <span class="material-symbols-outlined"
+                    >confirmation_number</span
+                  >
+                  <strong>Código de Entrada:</strong> QR
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tap-left" onclick="swiper.slidePrev()"></div>
+          <div class="tap-right" onclick="swiper.slideNext()"></div>
+        </div>
+
+        <div class="swiper-slide section1">
+          <div class="section5-content">
+            <div class="confirmation-card">
+              <!-- Círculos decorativos en las esquinas -->
+              <div class="corner-top-left"></div>
+              <div class="corner-top-right"></div>
+              <div class="corner-bottom-left"></div>
+              <div class="corner-bottom-right"></div>
+
+              <div class="divider"></div>
+              <!-- Título elegante -->
+              <h2 class="elegant-title">Confirma tu Asistencia</h2>
+
+              <div class="divider"></div>
+              <!-- Imagen con marquito y círculos decorativos -->
+              <div class="image-container">
+                <img src="/img/10.jpg" alt="Foto especial" class="image-box" />
+                <div class="circle-top-left"></div>
+                <div class="circle-top-right"></div>
+                <div class="circle-bottom-left"></div>
+                <div class="circle-bottom-right"></div>
+              </div>
+
+              <!-- Línea separadora -->
+              <div class="divider"></div>
+
+              <!-- QR y fecha con frase elegante -->
+              <div class="qr-date-container">
+                <img src="/img/QR.jpg" alt="QR de acceso" class="qr-image" />
+                <div class="date-box">
+                  <span class="save-the-date">Separa la Fecha</span>
+                  <span class="date-text">15 FEB 2025</span>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+              <!-- Botón de confirmar asistencia -->
+              <button class="confirm-button">Confirmar Asistencia</button>
+            </div>
+          </div>
+
+          <div class="tap-left" onclick="swiper.slidePrev()"></div>
+          <div class="tap-right" onclick="swiper.slideNext()"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="song.js"></script>
+    <script src="sct5.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        direction: "horizontal",
+        loop: false,
+        on: {
+          slideChange: function () {
+            var progressBar = document.getElementById("progressBar");
+            progressBar.style.width =
+              ((this.activeIndex + 1) / this.slides.length) * 100 + "%";
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
