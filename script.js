@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         heartInterval = setInterval(() => {
             if (!section3) {
-                console.error("❌ ERROR: No se encontró .section3-content, deteniendo corazones.");
                 clearInterval(heartInterval);
                 return;
             }
