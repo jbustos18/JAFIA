@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 🎵 Lista de reproducción con iconos y títulos
     let playlist = [
-        { src: "/sounds/song1.mp3", title: "Amandote", icon: "/img/song1.jpg" },
-        { src: "/sounds/song2.mp3", title: "Antes de Perderte", icon: "/img/song2.jpg" },
-        { src: "/sounds/song3.mp3", title: "Lo que Siento", icon: "/img/song3.jpg" }
+        { src: "sounds/song1.mp3", title: "Amandote", icon: "img/song1.jpg" },
+        { src: "sounds/song2.mp3", title: "Antes de Perderte", icon: "img/song2.jpg" },
+        { src: "sounds/song3.mp3", title: "Lo que Siento", icon: "img/song3.jpg" }
     ];
 
     let currentSong = 0;
