@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap");
+
 * {
   min-width: 0;
   font: inherit;
@@ -153,9 +155,15 @@ body {
 }
 
 @keyframes headTilt {
-  0% { transform: rotate(0deg); }
-  50% { transform: rotate(-5deg); }
-  100% { transform: rotate(5deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
 }
 
 .img1 {
@@ -476,13 +484,25 @@ body {
   border-radius: 50%;
 }
 
-.confirmation-card .corner-top-left { top: -6px; left: -6px; }
-.confirmation-card .corner-top-right { top: -6px; right: -6px; }
-.confirmation-card .corner-bottom-left { bottom: -6px; left: -6px; }
-.confirmation-card .corner-bottom-right { bottom: -6px; right: -6px; }
+.confirmation-card .corner-top-left {
+  top: -6px;
+  left: -6px;
+}
+.confirmation-card .corner-top-right {
+  top: -6px;
+  right: -6px;
+}
+.confirmation-card .corner-bottom-left {
+  bottom: -6px;
+  left: -6px;
+}
+.confirmation-card .corner-bottom-right {
+  bottom: -6px;
+  right: -6px;
+}
 
 .elegant-title {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-weight: bolder;
   font-size: 30px;
   color: #654b7b;
@@ -504,9 +524,9 @@ body {
   display: block;
 }
 
-.circle-top-left, 
-.circle-top-right, 
-.circle-bottom-left, 
+.circle-top-left,
+.circle-top-right,
+.circle-bottom-left,
 .circle-bottom-right {
   position: absolute;
   width: 10px;
@@ -515,10 +535,22 @@ body {
   border-radius: 50%;
 }
 
-.circle-top-left { top: -5px; left: -5px; }
-.circle-top-right { top: -5px; right: -5px; }
-.circle-bottom-left { bottom: -5px; left: -5px; }
-.circle-bottom-right { bottom: -5px; right: -5px; }
+.circle-top-left {
+  top: -5px;
+  left: -5px;
+}
+.circle-top-right {
+  top: -5px;
+  right: -5px;
+}
+.circle-bottom-left {
+  bottom: -5px;
+  left: -5px;
+}
+.circle-bottom-right {
+  bottom: -5px;
+  right: -5px;
+}
 
 .divider {
   width: 100%;
@@ -549,7 +581,7 @@ body {
 }
 
 .save-the-date {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
@@ -567,7 +599,7 @@ body {
   background: linear-gradient(to right, #654b7b, #9c77af);
   line-height: 1;
   font-size: 16px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   color: #fff;
   border: none;
   border-radius: 3px;
@@ -575,7 +607,7 @@ body {
   margin-top: 15px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
   z-index: 5;
 }
 
@@ -615,7 +647,7 @@ body {
   color: #654b7b !important;
 }
 
-.music-btn span :active{
+.music-btn span :active {
   color: #513a64 !important;
 }
 
