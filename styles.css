@@ -117,12 +117,13 @@ body {
 }
 
 .description {
+  top: -25px;
   font-family: Poppins;
   font-size: 16px;
   font-weight: lighter;
   color: #fff;
   padding: 0%;
-  margin: 0%;
+  margin: 10px;
 }
 
 .tap-left,
@@ -168,7 +169,7 @@ body {
 }
 
 .img1 {
-  width: 180px;
+  width: 185px;
   height: auto;
   position: absolute;
   bottom: -10px;
@@ -188,7 +189,7 @@ body {
 }
 
 .img2 {
-  width: 160px;
+  width: 165px;
   height: auto;
   position: absolute;
   top: -10px;
@@ -332,6 +333,7 @@ body {
 }
 
 .section4-content {
+  top: -25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -464,7 +466,7 @@ body {
 .confirmation-card {
   background: white;
   width: 90%;
-  top: -75px;
+  top: -25px;
   max-width: 400px;
   padding: 25px;
   border-radius: 10px;
